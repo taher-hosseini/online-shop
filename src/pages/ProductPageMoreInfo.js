@@ -20,8 +20,8 @@ const ProductPageMoreInfo = () => {
     }
 
     return (
-        <div className='row ProductPage-container'>
-            <div className='col-12 col-lg-6 ProductPage-right'>
+        <div className='row flex-column-reverse flex-lg-row ProductPage-container'>
+            <div className='col-12 col-lg-6 mt-2 mt-lg-0 ProductPage-right'>
                 <div className='ProductPage-content-main'>
                     <p className='ProductPage-content-main-title'>{product.name}</p>
                     <p className='ProductPage-content-main-description'>{product.description}</p>
