@@ -6,7 +6,7 @@ const products = [
         description: "این کفش رسمی ارگونومیک با چرم مصنوعی سیاه و صندلی و پشتی پددار، راحتی و پشتیبانی روزانه را برای شما فراهم می‌کند. مناسب برای استفاده در محیط‌های اداری و رسمی.",
         price: 400000,
         quantity: 10,
-        images: ["/img/shoes1.jpg", "/img/shoes1.jpg"]
+        images: ["/img/shoes1.jpg", "/img/shoes2.jpg"]
     },
     {
         id: 2,
