@@ -21,3 +21,34 @@
     line-height: 1.8;
     color: #555;
 }
+
+/* SocialLinks.css */
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-link {
+    font-size: 32px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Specific hover effects for each social link */
+.github:hover {
+    filter: hue-rotate(180deg);
+}
+
+.linkedin:hover {
+    filter: hue-rotate(90deg);
+}
+
+.email:hover {
+    filter: hue-rotate(270deg);
+}
+

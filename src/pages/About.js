@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -8,21 +9,37 @@ const About = () => {
                 <div className="row justify-content-center">
                     <div className="col-lg-8">
                         <div className="about-content">
-                            <h2 className="mb-4">درباره ما</h2>
-                            <p className="lead">
-                                ما در شرکت X به دنبال ایجاد تجربه‌ای بی‌نظیر برای مشتریان خود هستیم. با بهره‌گیری از
-                                تکنولوژی‌های پیشرفته و تیمی متخصص، ما به ارائه محصولات با کیفیت و خدمات بهتر از هر زمان
-                                دیگر متعهد هستیم.
+                            <h2 className="mb-4">درباره من</h2>
+                            <p style={{textAlign: "justify"}}>
+                                سلام! من طاهر حسینی نسب هستم، فارغ‌التحصیل کارشناسی ارشد در رشته مهندسی نرم‌افزار
+                                با گرایش نرم‌افزار از دانشگاه مدنی آذربایجان. با عشق و علاقه فراوان به دنیای تکنولوژی
+                                و برنامه‌نویسی وارد شدم و اکنون به عنوان یک توسعه‌دهنده فرانت‌اند وب فعالیت می‌کنم.
                             </p>
-                            <p>
-                                از اولویت‌های ما در شرکت X، تأمین رضایت مشتریان، احترام به محیط زیست و ارتقای
-                                اجتماعی است. ما به دنبال برقراری روابط پایدار و مفید با مشتریان، پیمانکاران و
-                                جامعه‌های محلی هستیم.
+                            <p style={{textAlign: "justify"}}>
+                                تخصص اصلی من کار با React است که به من این امکان را می‌دهد تا رابط‌های کاربری دینامیک و
+                                تعاملی بسازم.
+                                در کنار توانمندی‌های فنی، تلاش می‌کنم تا همواره به‌روز بمانم و از جدیدترین تکنولوژی‌ها و
+                                روندهای روز دنیا بهره‌برداری کنم.
+                                هدف من، ایجاد تجربه‌های کاربری بی‌نظیر و بهینه‌سازی عملکرد وب‌سایت‌هاست تا کاربران از
+                                کار با آن‌ها لذت ببرند.
                             </p>
-                            <p>
-                                اعتماد شما به ما بزرگ‌ترین سرمایه است و ما با افتخار به ارائه خدمات و محصولاتی با
-                                کیفیت بالا و پشتیبانی 24/7 متعهدیم.
+                            <p style={{textAlign: "justify"}}>
+                                به دنبال فرصت‌هایی برای همکاری و مشارکت در پروژه‌های جدید هستم و همواره آماده‌ام تا با
+                                خلاقیت و دقت بالا، بهترین‌ها را به ارمغان بیاورم.
                             </p>
+                            <div className="social-links">
+                                <a href="https://github.com/taher-hosseini" className="social-link github" target="_blank"
+                                   rel="noopener noreferrer">
+                                    <FaGithub/>
+                                </a>
+                                <a href="https://www.linkedin.com/in/taher-hosseini-nasab/" className="social-link linkedin"
+                                   target="_blank" rel="noopener noreferrer">
+                                    <FaLinkedin/>
+                                </a>
+                                <a href="mailto:taherhossieninasab@gmail.com" className="social-link email">
+                                    <FaEnvelope/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
