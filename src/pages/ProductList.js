@@ -2,11 +2,14 @@ import React, { useContext } from 'react';
 import './ProductList.css';
 import { ProductContext } from '../contexts/ProductContext';
 import { CartContext } from '../contexts/CartContext';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
+import {AuthContext} from "../contexts/AuthContext";
 
 const ProductList = () => {
     const { productList, selectedCategory } = useContext(ProductContext);
+    const { isLoggedIn } = useContext(AuthContext);
     const { cart, setCart,addToCart } = useContext(CartContext);
+    const navigate = useNavigate();
 
     const truncateText = (text, maxLength) => {
         if (text.length <= maxLength) {
@@ -19,8 +22,11 @@ const ProductList = () => {
         ? productList
         : productList.filter(product => product.category === selectedCategory);
     const handleAddToCart = (product) => {
-        addToCart(product)
-        console.log(product)
+        if (!isLoggedIn) {
+            navigate('/login');
+        } else {
+            addToCart(product)
+        }
     }
 
     return (
